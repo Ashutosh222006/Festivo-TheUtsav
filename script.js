@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all FAQ question elements
     const faqQuestions = document.querySelectorAll('.faq .lll');
 
     faqQuestions.forEach(function(question) {
@@ -8,10 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const answer = question.nextElementSibling;
         
         question.addEventListener('click', function() {
-            // Toggle the display of the answer
             answer.classList.toggle('show');
             
-            // Toggle the rotation of the icon
             icon.classList.toggle('rotate');
         });
     });
